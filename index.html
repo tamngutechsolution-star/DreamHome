@@ -1,0 +1,420 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>DreamHomes Real Estate</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="DreamHouse.css">
+    </head>
+    <body>
+    <style>
+
+
+/* Google Font */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8px;
+    background: #0F172A;
+}
+
+.logo h2{
+    color: #fff
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 3s;
+}
+
+nav a:hover{
+    color: #D4AF37;
+}
+
+.btn{
+    background: #D4AF37;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background: #b99222;
+}
+
+/* Hero */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8px;
+    gap: 40px;
+}
+
+.hero-text{
+    flex: 1;
+}
+
+.hero-text h1{
+    font-size: 45px;
+    color: #0F172A;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    margin-bottom: 25px;
+}
+
+.hero-btn{
+    display: inline-block;
+    background: #0F172A;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.hero-btn hover{
+    background: #D4AF37;
+}
+
+.hero-image{
+    flex: 1;
+}
+
+.hero-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Properties */
+
+.properties{
+    padding: 60px 8px;
+    text-align: center;
+}
+
+.properties h2{
+    margin-bottom: 35px;
+    color: #0F172A;
+}
+
+.property-container{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card{
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0.1);
+    width: 320px;
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3,
+.card p,
+.card h4{
+    margin: 15px;
+}
+
+.card a{
+    display: inline-block;
+    margin: 15px;
+    text-decoration: none;
+    color: #D4AF37;
+    font-weight: bold;
+}
+
+/* About */
+
+.about{
+    padding: 60px 8%;
+    background: #fff;
+    text-align: center;
+}
+
+.about-box{
+    display: flex;
+    gap: 20px;
+}
+
+.box{
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+/* Testamonial */
+
+.testamonial{
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.review{
+    font-size: 25px;
+    color: gold;
+    margin: 15px 0;
+}
+
+/* CTA */
+
+.cta{
+    background: #0F172A;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta h2{
+    margin-bottom: 15px;
+}
+
+.cta p{
+    margin-bottom: 25px;
+}
+
+.cta a{
+    background: #D4AF37;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+/* Footer */
+
+footer{
+    background: #111827;
+    color: #fff;
+    padding: 40px 8%;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-content h3{
+    margin-bottom: 10px;
+}
+
+footer hr{
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a{
+        margin: 10px 0;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .property-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box{
+        flex-direction: column;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1{
+        font-size: 35px;
+    }
+
+    .card{
+        width: 100%;
+    }
+    
+}
+    </style>
+
+
+        <!---- Header ---->
+
+      <header>
+        <div class="logo">
+            <h2>DreamHomes</h2>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Properties</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <a href="#" class="btn">Contact Agent</a>
+    </header>
+    
+    <!---- Hero Section ---->
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Find Your Dream Home Today</h1>
+            <p>Discover beautiful houses, apartments, and commercial properties in the best location at affordable prices.</p>
+            <a href="#" class="hero-btn">Explore Properties</a>
+        </div>
+        <div class="hero-image">
+            <img src="RealEstate.jpg" alt="Modern House">
+        </div>
+    </section>
+
+    <!---- Featured Properties ---->
+
+    <section class="properties">
+        <h2>Featured Properties</h2>
+        <div class="property-container">
+            <div class="card">
+                <img src="FamilyHouse.jpg" alt="House">
+                <h3>Modern Family House</h3>
+                <p>Gerehu, Port Moresby</p>
+                <p>4 Bedrooms | 3 Bathrooms</p>
+                <h4>PGK120,000,000</h4>
+                <a href="#">View Details</a>
+            </div>
+            <div class="card">
+                <img src="LuxuryApartment.jpg" alt="House">
+                <h3>Luxury Apartment</h3>
+                <p>Boroko, Port Moresby</p>
+                <p>3 Bedroom | 2 Bathrooms</p>
+                <h4>PGK85,000,000</h4>
+                <a href="#">View Details</a>
+            </div>
+            <div class="card">
+                <img src="Duplex.jpg" alt="House">
+                <h3>Executive Duplex</h3>
+                <p>Gordons, Port Moresby</p>
+                <p>5 Bedroom | 5 Bathrooms</p>
+                <h4>PGk160,000,000</h4>
+                <a href="#">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!---- Why Choose Us ---->
+
+    <section class="about">
+        <h2>Why Choose DreamHomes?</h2>
+        <div class="about-box">
+            <div class="box">
+                <h3>Premium Properties</h3>
+                <p>Carefully selected homes with quality finishes.</p>
+            </div>
+            <div class="box">
+                <h3>Affordable Prices</h3>
+                <p>Properties that fit different budgets.</p>
+            </div>
+            <div class="box">
+                <h3>Prime Location</h3>
+                <p>Home Located in secure neighbourhoods.</p>
+            </div>
+            <div class="box">
+                <h3>Trusted Agent</h3>
+                <p>Professional agents ready to assist you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!---- Testamonial ---->
+
+    <section class="testamonial">
+        <h2>What Our Clients Say</h2>
+        <p class="review"></p>
+        <p>"DreamHomes made buying our first home simple and stress-free. Highly recommended!"</p>
+        <h4>First Come, First Serve</h4>
+    </section>
+
+    <!---- Call to Action ---->
+
+    <section class="cta">
+        <h2>Ready To Find Your Dream Home?</h2>
+        <p>Browse our collection of beautiful and affordable properties.</p>
+        <a href="#">Explore Now</a>
+    </section>
+
+    <!---- Footer ---->
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>DreamHomes</h3>
+                <p>Your trusted real estate partner.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <p>Home</p>
+                <p>Properties</p>
+                <p>About</p>
+                <p>Contact</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>+675 74132403</p>
+                <p>info@dreamhomes.com</p>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">
+          2026 DreamHomes. All Right Reserved. Proudly Created By Tamngu Tech Solution.
+        </p>
+    </footer>
+    </body>
+</html>
